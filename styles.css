@@ -1,0 +1,894 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Roboto Condensed', sans-serif;
+	scroll-behavior: smooth;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+/* Nav Bar */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 8vh;
+	padding: 20px 10px 10px 20px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.logo img {
+	height: 95px;
+}
+
+.nav-links {
+	display: flex;
+	text-transform: uppercase;
+	justify-content: space-around;
+	width: 50%;
+}
+
+.nav-links li {
+	list-style: none;
+}
+
+.nav-links a {
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: .2rem;
+	font-size: 2.25rem;
+	font-weight: 100;
+}
+
+.nav-links a:hover {
+	color: #f36a22;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+/* End Nav Bar */
+
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 20vh;
+}
+
+/* Hero Section */
+#hero {
+	background-image: url("images/unhq.jpg");
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+
+#hero .hero {
+	justify-content: flex-start;
+	padding-top: 15vh;
+}
+
+#hero::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+#hero h1 {
+	display: block;
+	width: fit-content;
+	font-size: 5rem;
+	font-weight: 600;
+	letter-spacing: .3rem;
+	padding-right: 30%;
+	padding-left: 3%;
+	position: relative;
+	color: #fff;
+	z-index: 1;
+}
+
+
+
+#hero h6 {
+	display: inline-block;
+	padding-left: 3%;
+	font-size: 1.2rem; 
+	color: #6B6B6B;
+}
+/* End Hero Section */
+
+/* About Section */
+#about {
+	background-color: #214092;
+	color: #5b92e5;
+}
+
+#about .about {
+	flex-direction: column;
+	text-align: center;
+	padding-top: 17vh;
+}
+
+#about .ass-names {
+	text-transform: uppercase;
+}
+
+#about .ass-names li {
+	list-style: none;
+	text-align: center;
+	padding: 1.5rem;
+	letter-spacing: .5rem;
+	font-weight: 600;
+}
+
+#about .ass-names a {
+	text-decoration: none;
+	font-size: 3.5rem;
+	color: #5b92e5;
+}
+
+#about .ass-names a:hover {
+	color: white;
+	transition: .3s ease all;
+}
+/* End About Section */
+
+/* Schedule Section */
+#schedule {
+	background-color: #5b92e5;
+}
+
+#schedule .schedule {
+	flex-direction: column;
+	text-align: center;
+	padding-top: 5vh;
+}
+
+#schedule h1 {
+	color: #214092;
+	font-size: 9rem;
+	padding-bottom: 5%;
+	opacity: .3;
+}
+
+#schedule img {
+	height: 350px;
+}
+/* End Schedule Section */
+
+/* Updates Section */
+#updates {
+	background-image: url("images/724114.jpg");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+}
+
+#updates .updates {
+	padding-top: 15vh;
+}
+
+#updates::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+#updates .bullet {
+	background-color: #214092;
+	padding: 2%;
+	width: 25%;
+	height: 75vh;
+	border-radius: 20px;
+	margin-right: 3%;
+	margin-left: 3%;
+}
+
+#updates .bullet h1 {
+	text-align: center;
+	color: #5b92e5;
+	letter-spacing: .2rem;
+	padding-bottom: 5%;
+	font-size: 2.5rem;
+}
+
+#updates .bullet p {
+	text-align: center;
+	letter-spacing: .1rem;
+	line-height: 2rem;
+	font-weight: 100;
+	color: #fff;
+	padding-bottom: 10%;
+}
+
+#updates .bullet p span {
+	font-weight: 600;
+}
+
+#updates .bullet a {
+	padding: 5% 10%;
+	border: 5px #DEDEDE solid;
+	border-radius: 10px;
+	color: #DEDEDE;
+	text-decoration: none;
+	letter-spacing: 0.1rem;
+	text-transform: lowercase;
+	font-weight: 600;
+}
+
+#updates .bullet a:hover {
+	background-color: #DEDEDE;
+	color: #214092;
+	transition: .1s ease all;
+}
+
+#updates .bullet .hide
+{
+	display: none;
+}
+/* End Updates Section */
+
+/* Footer Section */
+#footer {
+	background-color: #000;
+	width: 100%;
+}
+
+#footer .footer {
+	min-height: 30vh;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#footer .foot-content {
+	padding: 0 10%;
+}
+
+#footer .foot-content h1 {
+	color: #f36a22;
+	font-size: 3.5rem;
+	letter-spacing: .2rem;
+	text-align: center;
+	padding-bottom: 10%;
+}
+
+#footer .foot-content p {
+	color: #5E5E5E;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 100;
+	letter-spacing: .1rem;
+	line-height: 2rem;
+}
+
+#footer img {
+	opacity: 0.3;
+}
+
+#footer .trademark h6 {
+	color: #1F1F1F;
+	text-align: center;
+	font-size: .8rem;
+	padding-bottom: 1%;
+	padding-top: 0;
+	letter-spacing: 0.3rem;
+}
+
+#footer .trademark a {
+	color: #214092;
+	letter-spacing: 0.2rem;
+}
+
+#footer .trademark a:hover {
+	opacity: .6;
+	transition: .2s ease all;
+}
+/* End Footer Section */
+
+/*---------------------------------- GA --------------------------------------*/
+
+/* Hero GA Section */
+#hero-ga {
+	background-image: url("images/unga2.jpg");
+	background-attachment: fixed;
+ 	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+#hero-ga::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+#hero-ga .hero-ga {
+	padding-top: 0;
+	flex-direction: column;
+}
+
+#hero-ga .square {
+	background-color: #214092;
+	padding: 5%;
+	margin-right: 4%;
+	margin-top: 1.5%;
+	margin-left: 20%;
+	margin-bottom: 1.5%;
+	border-radius: 20px;
+}
+
+#hero-ga .square h1 {
+	color: #fff;
+	padding: 10% 0 20% 0;
+	font-size: 12rem;
+	font-weight: 400;
+	letter-spacing: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#hero-ga .square p {
+	color: #fff;
+	text-align: center;
+	line-height: 3rem;
+	padding: 0 15%;
+	font-size: 2rem;
+	font-weight: 100;
+	opacity: 0.5;
+	letter-spacing: 0.1rem;
+}
+
+#hero-ga .square a {
+	text-decoration: underline;
+	color: #fff;
+}
+
+#hero-ga .square a:hover {
+	color: #fff;
+	opacity: .2;
+	transition: .3s ease all;
+}
+
+#hero-ga .chair h2 {
+	color: #5b92e5;
+	padding: 20% 0 5% 0;
+	font-size: 11rem;
+	font-weight: 600;
+	letter-spacing: .4rem;
+	text-transform: capitalize;
+	text-align: right;
+}
+
+#hero-ga .chair h3 {
+	color: #fff;
+	text-align: right;
+	line-height: 3rem;
+	padding: 0;
+	font-size: 2.5rem;
+	font-weight: 100;
+	letter-spacing: 0.1rem;
+}
+
+#hero-ga .chair p {
+	text-align: right;
+	padding: 0;
+	padding-bottom: 4%;
+	padding-top: 1%;
+}
+
+#hero-ga .info h2 {
+	color: #5b92e5;
+	padding: 10% 0 5% 0;
+	font-size: 11rem;
+	font-weight: 600;
+	letter-spacing: .4rem;
+	text-transform: capitalize;
+	text-align: left;
+}
+
+#hero-ga .info h3 {
+	color: #fff;
+	text-align: left;
+	line-height: 3rem;
+	padding: 0;
+	padding-bottom: 1%;
+	font-size: 2.5rem;
+	font-weight: 100;
+	letter-spacing: 0.1rem;
+}
+
+#hero-ga .info p {
+	text-align: left;
+	padding: 0;
+	padding-bottom: 4%;
+	padding-top: 1%;
+}
+
+#hero-ga .info a {
+	text-align: left;
+	text-decoration: none;
+	padding: 0;
+	padding-bottom: 1%;
+	color: #fff;
+	line-height: 3rem;
+	font-size: 2rem;
+	opacity: 0.6;
+	font-weight: 100;
+	letter-spacing: 0.1rem;
+}
+
+#hero-ga .info a:hover {
+	opacity: .2;
+	transition: .3s ease all;
+}
+
+#hero-ga .top a {
+	font-size: 4rem;
+	color: #214092;
+	text-decoration: none;
+}
+
+#hero-ga .top a:hover {
+	opacity: 0.5;
+	transition: .3s ease all;
+}
+/* Hero GA Section */
+
+/*---------------------------------- MQ --------------------------------------*/
+@media (max-width: 1375px) {
+	
+	#hero-ga .square h1 {
+		font-size: 11rem;
+	}
+	
+}
+
+/*---------------------------------- MQ --------------------------------------*/
+@media (max-width: 1290px){
+	
+	.nav-links a {
+		font-size: 2rem;
+	}
+	
+	#hero h1 {
+		font-size: 4.75rem;
+		letter-spacing: 0.2rem;
+	}
+	
+	#hero h6 {
+		font-size: 1rem;
+	}
+	
+	#about .ass-names a {
+		font-size: 3.25rem;
+	}
+	
+	#schedule img {
+		height: 325px;
+	}
+
+	#updates .bullet h1 {
+		letter-spacing: .2rem;
+		font-size: 2rem;
+	}
+	
+	#footer .foot-content {
+		padding: 0 7.5%;
+	}
+	
+	#hero-ga .square h1 {
+		font-size: 9rem;
+	}
+	
+	#hero-ga .square p {
+		font-size: 1.7rem;
+	}
+	
+	#hero-ga .chair h2 {
+		font-size: 9rem;
+	}
+	
+	#hero-ga .chair h3 {
+		font-size: 2rem;
+	}
+	
+	#hero-ga .info h2 {
+		font-size: 9rem;
+	}
+	
+	#hero-ga .info h3 {
+		font-size: 2rem;
+	}
+	
+	#hero-ga .info a {
+		font-size: 1.7rem;
+	}
+
+}
+
+/*---------------------------------- MQ --------------------------------------*/
+@media (max-width: 1230px){
+	
+	#hero-ga .square h1 {
+		font-size: 7rem;
+	}
+	
+	#hero-ga .square {
+		margin-right: 2%;
+		margin-left: 26%;
+	}
+	
+}
+
+/*---------------------------------- MQ --------------------------------------*/
+@media (max-width: 1200px) {
+	
+	#schedule img {
+		height: 300px;
+	}
+
+	#updates .bullet h1 {
+		letter-spacing: .2rem;
+		font-size: 1.7rem;
+	}
+
+}
+
+/*---------------------------------- MQ --------------------------------------*/
+
+@media (max-width: 1100px) {
+	
+	.nav-links a {
+		font-size: 1.8rem;
+	}
+	
+	#hero h1 {
+		font-size: 4.5rem;
+		letter-spacing: 0.2rem;
+	}
+	
+	#schedule img {
+		height: 275px;
+	}
+
+	#updates .bullet p {
+		font-size: .9rem;
+	}
+	
+	#footer .foot-content {
+		padding: 0 5%;
+	}
+}
+
+/*---------------------------------- MQ --------------------------------------*/
+
+@media (max-width: 1020px) {
+	
+	.nav-links a {
+		font-size: 1.7rem;
+	}
+	
+	#hero h1 {
+		font-size: 4rem;
+		letter-spacing: 0.2rem;
+	}
+	
+	#about .ass-names a {
+		font-size: 3rem;
+	}
+	
+	#schedule h1 {
+		font-size: 8rem;
+	}
+	
+	#schedule img {
+		height: 230px;
+	}
+
+	#updates .bullet h1 {
+		letter-spacing: .2rem;
+		font-size: 1.2rem;
+	}
+	
+	#updates .bullet p {
+		font-size: 0.8rem;
+		letter-spacing: 0.1rem;
+		line-height: 1.5rem;
+	}
+	
+	#footer .foot-content {
+		padding: 0 2.5%;
+	}
+	
+}
+
+/*---------------------------------- MQ --------------------------------------*/
+
+@media (max-width: 940px) {
+	
+	.nav-links a {
+		font-size: 1.5rem;
+		letter-spacing: .1rem;
+	}
+	
+	#hero-ga .hero-ga {
+		padding-top: 20vh;
+	}
+	
+	#hero-ga .square {
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	
+}
+
+/*---------------------------------- MQ --------------------------------------*/
+
+@media (max-width: 850px) {
+	
+	.nav-links a {
+		font-size: 1.5rem;
+		letter-spacing: .1rem;
+	}
+	
+	#hero h1 {
+		font-size: 3.7rem;
+		letter-spacing: 0.2rem;
+	}
+	
+	#about .ass-names a {
+		font-size: 2.7rem;
+	}
+	
+	#schedule h1 {
+		font-size: 7rem;
+	}
+	
+	#schedule img {
+		height: 200px;
+	}
+
+	#updates .bullet h1 {
+		letter-spacing: .2rem;
+		font-size: 1.2rem;
+	}
+	
+	#updates .bullet p {
+		font-size: 0.8rem;
+		letter-spacing: 0.1rem;
+		line-height: 1.5rem;
+	}
+	
+	#footer .foot-content {
+		padding: 0 2.25%;
+	}
+	
+}
+
+/*---------------------------------- MQ --------------------------------------*/
+
+@media (max-width: 780px) {
+	
+	.nav-links a {
+		font-size: 1.5rem;
+		letter-spacing: .1rem;
+		display: none;
+	}
+	
+	#about .about {
+		padding-top: 0;
+	}
+	
+	#schedule .schedule {
+		padding-top: 0;
+	}
+	
+	#updates .updates {
+		padding-top: 0;
+	}
+	
+	nav {
+		position: absolute;
+	}
+	
+	#footer img {
+		display: none;
+	}
+	
+}
+
+/*---------------------------------- MQ --------------------------------------*/
+
+@media (max-width: 750px) {
+	
+	#hero h1 {
+		font-size: 3rem;
+		letter-spacing: 0.2rem;
+	}
+	
+	#updates .bullet h1 {
+		letter-spacing: .1rem;
+		font-size: 1rem;
+	}
+	
+	#hero-ga .square h1 {
+		font-size: 5rem;
+	}
+	
+	#hero-ga .square p {
+		font-size: 1.5rem;
+	}
+	
+	#hero-ga .chair h2 {
+		font-size: 7rem;
+	}
+	
+	#hero-ga .chair h3 {
+		font-size: 2rem;
+	}
+	
+	#hero-ga .info h2 {
+		font-size: 7rem;
+	}
+	
+	#hero-ga .info h3 {
+		font-size: 2rem;
+	}
+	
+	#hero-ga .info a {
+		font-size: 1.5rem;
+	}
+	
+}
+
+/*---------------------------------- MQ --------------------------------------*/
+
+@media (max-width: 600px) {
+	
+	#updates .updates {
+	flex-direction: column;
+}
+	#updates .bullet {
+		width: 60%;
+		margin-top: 4.5%;
+		margin-bottom: 4.5%;
+	}
+	
+	#updates .bullet h1 {
+		letter-spacing: .2rem;
+		font-size: 1.5rem;
+	}
+	
+	#updates .bullet p {
+		font-size: .8rem;
+		letter-spacing: 0.1rem;
+		line-height: 1.5rem;
+	}
+	
+	#hero-ga .square h1 {
+		font-size: 4rem;
+	}
+	
+}
+
+/*---------------------------------- MQ --------------------------------------*/
+
+@media (max-width: 500px) {
+	
+	#hero h1 {
+		font-size: 2rem;
+		letter-spacing: .25rem;
+	}
+	
+	#hero h6 {
+		font-size: .8rem;
+	}
+	
+	#about .ass-names a {
+		font-size: 2.2rem;
+	}
+	
+	#schedule h1 {
+		font-size: 4rem;
+	}
+	
+	#schedule img {
+		height: 175px;
+	}
+	
+	#hero-ga .square h1 {
+		font-size: 2.5rem;
+	}
+	
+	#hero-ga .square p {
+		font-size: 1.2rem;
+		line-height: 1.5rem;
+		letter-spacing: .2rem;
+	}
+	
+	#hero-ga .chair h2 {
+		font-size: 4rem;
+	}
+	
+	#hero-ga .chair h3 {
+		font-size: 1.5rem;
+	}
+	
+	#hero-ga .info h2 {
+		font-size: 4rem;
+	}
+	
+	#hero-ga .info h3 {
+		font-size: 1.5rem;
+	}
+	
+	#hero-ga .info a {
+		font-size: 1.2rem;
+	}
+	
+	#footer .foot-content h1 {
+		font-size: 2.5rem;
+		letter-spacing: .3rem;	
+	}
+
+	#footer .foot-content p {
+		font-size: 1rem;
+	}
+
+	#footer .trademark h6 {
+		font-size: .6rem;
+		letter-spacing: 0.2rem;
+	}
+	
+}
+
+/*---------------------------------- MQ --------------------------------------*/
+
+@media (max-width: 400px) {
+	
+	#hero-ga::after {
+		background-color: #214092;
+		opacity: 1
+	}
+	
+	#hero-ga .top a {
+		color: #fff;
+	}
+	
+}
